@@ -28,7 +28,7 @@ Example frame:
       "keyid": 40 // ID of the day key which matched the beacon
     }
   ]
- }
+}
  ```
 
 
