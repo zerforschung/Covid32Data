@@ -1,12 +1,12 @@
 # Cov32 Data
 
-This is a data collection of [Covid19 Exposure Notification Protocol](https://en.wikipedia.org/wiki/Exposure_Notification) data, collected in Berlin subway between mid november 2020 to early january 2021.
+This is a data collection of [Covid19 Exposure Notification Protocol](https://en.wikipedia.org/wiki/Exposure_Notification) data, collected in Berlin subway between mid november 2020 to early january 2021. 
 
-Informaiton about the collection process is documented [in our blog](https://zerforschung.org/posts/auf-der-suche-nach-corona-im-berliner-untergrund/). This article also contains some baisc analytics and information about data quality.
+Informaiton about the collection process is documented [in our blog](https://zerforschung.org/posts/auf-der-suche-nach-corona-im-berliner-untergrund/). This article also contains some baisc analytics and information about data quality. The source code of the sensor can be found in the [Covid32Counter repo](https://github.com/zerforschung/Covid32Counter).
 
 ## Data format
 
-The dataset contains an array of frames. Each frame represents a mesurement of Exposure Notification Beacons. Mesurements where taken for 2 seconds every minute. There are exceptions in this interval, when we detected, that the Train was parked in a tunnel or depot. We also collected BSSIDs of Wifi networks to calculate locations of the mesurements. For privacy reasons, we don't publish the BSSIDs but the calculated geolocations. For the same reason we don't publish the received beacon data but the result of the key matching, including the associated metadata of a positive keymatch. Also the number of non matching beacons per frame.
+The dataset contains an array of frames. Each frame represents a mesurement of Exposure Notification Beacons. Mesurements where taken for 2 seconds every minute. There are exceptions in this interval, when we detected, that the train was parked in a tunnel or depot. We also collected BSSIDs of wifi networks to calculate locations of the mesurements. For privacy reasons, we don't publish the BSSIDs but the calculated geolocations. For the same reason we don't publish the received beacon data but the result of the key matching, including the associated metadata of a positive keymatch. Also the number of non matching beacons per frame.
 
 Example Frame:
 
@@ -40,5 +40,5 @@ As decripted in the article the data has some major flaws:
 * It's not enought data
 * December was not an ideal time to collect data, because of holliday, change of lockdown rules, low PCR-Test coverage during a high covid incidence period.
 * Sensors where not evenly distributed over the subway routes of berlin
-* opening of a new subway line during this period
+* opening of a new subway line extension during this period
 * Sensors where placed in different locations of the trains, also because of different types of trains
