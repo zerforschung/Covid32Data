@@ -2,7 +2,7 @@
 
 This is a data collection of [Covid19 Exposure Notification Protocol](https://en.wikipedia.org/wiki/Exposure_Notification) data, collected in Berlin subway between mid november 2020 to early january 2021. 
 
-Information about the collection process is documented [in our blog](https://zerforschung.org/posts/auf-der-suche-nach-corona-im-berliner-untergrund/). This article also contains some basic analytics and information about data quality. The source code of the sensor can be found in the [Covid32Counter repo](https://github.com/zerforschung/Covid32Counter).
+Information about the collection process is documented [in our blog](https://zerforschung.org/posts/auf-der-suche-nach-corona-im-berliner-untergrund/) (currently only in german). This article also contains some analytics and information about data quality. The source code of the sensor and server can be found in the [Covid32Counter repo](https://github.com/zerforschung/Covid32Counter).
 
 ## Data format
 
@@ -38,7 +38,8 @@ Example frame:
 As decripted in the article the data has some major flaws:
 
 * It's not enought data / sensors
-* December was not an ideal time to collect data, because of holliday, change of lockdown rules, low PCR-Test coverage during a high covid incidence period.
+* The app install base is likely to unevenly distributed across the population
+* December was not an ideal time to collect data, because of holliday, change of lockdown rules, low PCR-Test coverage during a high covid incidence period
 * Sensors where not evenly distributed over the subway routes of berlin
 * Opening of a new subway line extension during this period
 * Sensors where placed in different locations of the trains, also because of different types of trains
